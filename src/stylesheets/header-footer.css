@@ -51,15 +51,7 @@ ul a {
   text-decoration: none;
 }
 
-.active{
-  border: 3px solid cyan;
-  padding: 5px;
-  border-radius: 10px;
-}
-.active a{
-  font-weight: bold;
-  color: cyan;
-}
+
 
 .contact{
   padding-top: 50px;
@@ -101,7 +93,7 @@ input , textarea{
   color: white;
 }
 .footer-icons:hover{
-  color: cyan;
+  color:#74ee15;
   transform: scale(1.5);
   cursor: pointer;
 }
@@ -156,4 +148,72 @@ input , textarea{
     padding: 15px !important;
     margin: 15px;
   }
+}
+
+
+/* Header container */
+.header {
+  width: 100%;
+  background-color: #001220;
+  padding: 15px 30px;
+}
+
+/* Navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* brand left, links right */
+  align-items: center;
+}
+
+/* Company name */
+/* Logo inside navbar */
+.navbar-logo {
+  height: 40px;          /* adjust size */
+  width: auto;
+  margin-right: 10px;    /* spacing between logo and text */
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;   /* align logo + text vertically */
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 25px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-links li a:hover {
+  color: #74ee15;
+  text-shadow: 0px 0px 6px #fff;
+}
+
+/* Active link */
+.active a {
+  font-weight: bold;
+  color: #74ee15;
+  border: 2px solid rgb(0, 255, 8);
+  padding: 5px 10px;
+  border-radius: 8px;
 }
