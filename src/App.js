@@ -23,8 +23,8 @@ function App() {
          <BrowserRouter>
          
            <Route path='/' exact component={Home}/>
-           <Route path='/projects' exact component={Projects}/>
-           <Route path='/courses' exact component={Courses}/>
+           <Route path='/products' exact component={Projects}/>
+           <Route path='/chemicals' exact component={Courses}/>
            <Route path='/contact' exact component={Contact}/>
          
          </BrowserRouter>
