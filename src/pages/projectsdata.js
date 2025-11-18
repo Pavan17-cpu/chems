@@ -15,7 +15,7 @@ const projectsdata = [
     },
     {
       title: "Nitric Acid-60%",
-      image: "./nitric-acid-60.webp",
+      image: "./nitric-acid-60.png",
       description:
         "Nitric Acid 60% is a strong mineral acid solution widely used in chemical industries, fertilizers, explosives, and metallurgy.",
       link: "/",
@@ -36,7 +36,7 @@ const projectsdata = [
     },
     {
       title: "Sulphuric Acid-98%",
-      image: "./sulphuric acid 98.webp",
+      image: "./sulphuric acid 98.png",
       description:
         "Sulphuric Acid 98% is a highly concentrated industrial acid, essential in fertilizers, petroleum refining, metallurgy, and battery production.",
       link: "/",
