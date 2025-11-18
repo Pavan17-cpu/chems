@@ -5,7 +5,7 @@ function Courosel() {
         <div>
             
             <div className='courosel-parent position-relative' id='courosel'>
-              <h1 className='position-absolute top-0 start-0 end-0 text-center mt-5'>Technologes I use</h1>
+              <h1 className='position-absolute top-0 start-0 end-0 text-center mt-5'>Industries We Serve</h1>
 
               <div className='gallery'>
 
