@@ -1,25 +1,38 @@
-import React, { useState } from "react";
-import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
+import React from "react";
 import { Link } from "react-router-dom";
+
 function Header() {
-  const [showHeader, setShowHeader] = useState(false);
-  const path = window.location.pathname
+  const path = window.location.pathname;
+
   return (
     <div className="header">
-      {showHeader ? (
-        <RiCloseFill 
-         onClick={()=>{setShowHeader(!showHeader)}}
-        className="menu-icon position-fixed top-0 end-0" />
-      ) : (
-        <RiMenu3Fill className="menu-icon position-fixed top-0 end-0" onClick={()=>{setShowHeader(!showHeader)}}/>
-      )}
+      <nav className="navbar">
+        {/* Company logo + name on the left */}
+        <div className="navbar-brand">
+          <img
+            src="./logo.jpg"   // <-- replace with your logo file path
+            alt="Company Logo"
+            className="navbar-logo"
+          />
+          
+        </div>
 
-      <ul className={`${showHeader ? 'show-header' : 'hide-header'} n-box1`}>
-          <li className={`${path=='/' && 'active'}`}><Link to='/'>Home</Link></li>
-          <li className={`${path=='/projects' && 'active'}`}><Link to='projects'>Projects</Link></li>
-          <li className={`${path=='/courses' && 'active'}`}><Link to='/courses'>Courses</Link></li>
-          <li className={`${path=='/contact' && 'active'}`}><Link to='/contact'>Contact</Link></li>
-      </ul>
+        {/* Navigation links on the right */}
+        <ul className="navbar-links">
+          <li className={`${path === '/' ? 'active' : ''}`}>
+            <Link to="/">Home</Link>
+          </li>
+          <li className={`${path === '/projects' ? 'active' : ''}`}>
+            <Link to="/products">Products</Link>
+          </li>
+          <li className={`${path === '/courses' ? 'active' : ''}`}>
+            <Link to="/chemicals">ChemicalsList</Link>
+          </li>
+          <li className={`${path === '/contact' ? 'active' : ''}`}>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
